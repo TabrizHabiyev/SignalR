@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<User>
+
+<div class="container">
+    <div class="d-flex flex-column text-center justify-content-center">
+        @foreach (var item in Model)
+        {
+
+            <h1>Id: @item.Id</h1>
+            <h1>Username: @item.Username</h1>
+            <h1>Email: @item.Email</h1>
+        }
+    </div>
+</div>
+
+
